@@ -16,7 +16,7 @@ body{
     margin: auto;
 }
 
-#Calculadora {
+#calculadora {
     background: #78C0E0;
     width: 50%;
     height: 100%;
@@ -32,11 +32,11 @@ body{
 }
 
 .contenido {
-    position: relative;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
     overflow: hidden;
-    padding: 40px;
+    padding: 10px;
 }
 
 input {
@@ -49,7 +49,7 @@ input {
 button {
     font-size: 15px;
     font-weight: bold;
-    padding: 12px 45px;
+    padding: 10px 45px;
     border-radius: 30px;
     background-color: #1C2570;
     border: 1px solid #1C2570;
@@ -57,6 +57,7 @@ button {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: transform 20ms ease-in;
+    margin: 1em;
 }
 
 button:active {
@@ -82,7 +83,7 @@ button:active {
 }
 
 .resultado {
-    color: #0A81D1;
+    color: #ffffff;
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 5px;
