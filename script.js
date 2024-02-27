@@ -36,27 +36,3 @@ function calcFlujo(peso){
     flujo += resto*4;
     return flujo;
 }
-
-const superficieCorp = document.getElementById('superficieCorp');
-const peso1 = document.getElementById('peso1');
-const peso2 = document.getElementById('peso2');
-
-CALCULAR.addEventListener('click', () => {
-    const peso1 = document.getElementById('superficieCorp').value
-    if (peso1 >= 30){
-        ERROR.style.display = 'none';
-        let flujo1 = calcFlujo1(peso1);
-        superficieCorp.innerHTML = resultadoFinal1 + ' cc/hr';
-        superficieCorp.style.display = 'block';
-}})
-
-function calcFlujo1(peso1){
-    let calcFlujo1;
-    if (peso1 >= 30) {
-        calcFlujo1 = ((peso1 *4) + 7) / (peso1 + 90);
-    }
-    const volumen1500 = calcFlujo1 * 1500;
-    const volumen2000 = calcFlujo1 * 2000;
-    const resultadoFinal1 = (volumen1500 > volumen2000) ? volumen1500 : volumen2000;
-}
-    return resultadoFinal1;
